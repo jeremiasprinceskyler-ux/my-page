@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wendell Jereremias - Portfolio</title>
+    <style>
+        .cool-title {
+            text-align: center;
+            font-size: 2.5em;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; }
+            to { text-shadow: 0 0 20px #fff, 0 0 40px #ff69b4, 0 0 60px #ff69b4; }
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #000;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .portfolio {
+            background: transparent;
+            max-width: 600px;
+            margin: 60px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 40px 30px;
+        }
+        h1 {
+            color: white;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+        @keyframes moveAround {
+            0%   { left: 0; top: 0; }
+            20%  { left: 60px; top: 0; }
+            40%  { left: 60px; top: 40px; }
+            60%  { left: 0; top: 40px; }
+            80%  { left: 0; top: 0; }
+            100% { left: 0; top: 0; }
+        }
+        @keyframes bounceName {
+            0%   { transform: translateX(0) scale(1); }
+            20%  { transform: translateX(20px) scale(1.1); }
+            40%  { transform: translateX(40px) scale(1); }
+            60%  { transform: translateX(20px) scale(0.9); }
+            80%  { transform: translateX(0) scale(1); }
+            100% { transform: translateX(0) scale(1); }
+        }
+        @keyframes fadeInName {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes colorPulse {
+            from { color: #0078d7; }
+            to { color: #00bfae; }
+        }
+        h2 {
+            color: pink;
+            margin-top: 30px;
+        }
+        p {
+            color: pink;
+            line-height: 1.6;
+        }
+        .contact {
+            margin-top: 30px;
+            font-size: 1.1em;
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="cool-title" style="font-size: 2.2em; color: white; font-weight: bold; text-shadow: 0 2px 8px #000a;">Hi Im Wendell</div>
+        <div style="width: 100%; display: flex; flex-direction: row; align-items: center; margin-top: 30px; margin-bottom: 20px; gap: 0; justify-content: flex-start;">
+            <aside style="flex: 0 0 280px; display: flex; align-items: center; justify-content: flex-end; height: 100%; margin-right: 10px;">
+                <img src="images/509429507_9994143660662330_3722655320937728370_n.jpg" alt="Wendell Jeremias" style="max-width: 260px; border-radius: 18px; box-shadow: 0 4px 24px rgba(0,0,0,0.3); display: block;">
+            </aside>
+            <div style="background: linear-gradient(135deg, #232526 0%, #414345 100%); border-radius: 16px; padding: 24px 32px; box-shadow: 0 4px 16px #000a; color: #fff; font-size: 1.25em; font-weight: 500; text-align: center; max-width: 600px; margin: 0 auto; letter-spacing: 1px;">
+                <span style="display: block; font-size: 1.1em; color: #00fff7; margin-bottom: 10px; font-weight: bold; text-shadow: 0 0 8px #00fff7;">Hello, how are you there?</span>
+                I am <span style="color: #ff69b4; font-weight: bold;">Wendell Jeremias</span>, a graduate in <span style="color: #00bfae; font-weight: bold;">Programming</span>.<br>
+                I know how to use <span style="color: #fff700; font-weight: bold;">HTML</span>, <span style="color: #00ff6a; font-weight: bold;">JavaScript</span>, etc.<br>
+                I don't totally know 100 percent about other codes, but I am willing to learn and I will do my best for that.<br>
+                <span style="color: #ff00cc; font-weight: bold;">Thank you and keep safe!</span>
+            </div>
+        </div>
+    <div style="width: 100%; display: flex; justify-content: center; align-items: center; margin-bottom: 30px;">
+        <nav style="background: transparent; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 10px 20px; height: fit-content;">
+                <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 18px;">
+                    <li><a href="#home" class="robotic-btn" style="text-decoration: none; color: #fff; font-weight: bold; padding: 14px 32px; border-radius: 12px; background: linear-gradient(120deg, #232526 0%, #414345 100%); box-shadow: 0 0 16px #00fff7, 0 2px 8px #232526a0; letter-spacing: 1px; font-size: 1.08em; display: flex; align-items: center; gap: 10px; transition: transform 0.2s, box-shadow 0.2s; border: 2px solid #00fff7; position: relative; overflow: hidden; text-shadow: 0 0 8px #00fff7;">
+                        <span style="font-size: 1.3em;">🤖</span> <strong>Home</strong>
+                    </a></li>
+                    <li><a href="#about" class="robotic-btn" style="text-decoration: none; color: #fff; font-weight: bold; padding: 14px 32px; border-radius: 12px; background: linear-gradient(120deg, #232526 0%, #414345 100%); box-shadow: 0 0 16px #ff00cc, 0 2px 8px #232526a0; letter-spacing: 1px; font-size: 1.08em; display: flex; align-items: center; gap: 10px; transition: transform 0.2s, box-shadow 0.2s; border: 2px solid #ff00cc; position: relative; overflow: hidden; text-shadow: 0 0 8px #ff00cc;">
+                        <span style="font-size: 1.3em;">🤖</span> <strong>About Me</strong>
+                    </a></li>
+                    <li><a href="#projects" class="robotic-btn" style="text-decoration: none; color: #fff; font-weight: bold; padding: 14px 32px; border-radius: 12px; background: linear-gradient(120deg, #232526 0%, #414345 100%); box-shadow: 0 0 16px #00ff6a, 0 2px 8px #232526a0; letter-spacing: 1px; font-size: 1.08em; display: flex; align-items: center; gap: 10px; transition: transform 0.2s, box-shadow 0.2s; border: 2px solid #00ff6a; position: relative; overflow: hidden; text-shadow: 0 0 8px #00ff6a;">
+                        <span style="font-size: 1.3em;">🤖</span> <strong>Projects</strong>
+                    </a></li>
+                    <li><a href="#contact" class="robotic-btn" style="text-decoration: none; color: #fff; font-weight: bold; padding: 14px 32px; border-radius: 12px; background: linear-gradient(120deg, #232526 0%, #414345 100%); box-shadow: 0 0 16px #fff700, 0 2px 8px #232526a0; letter-spacing: 1px; font-size: 1.08em; display: flex; align-items: center; gap: 10px; transition: transform 0.2s, box-shadow 0.2s; border: 2px solid #fff700; position: relative; overflow: hidden; text-shadow: 0 0 8px #fff700;">
+                        <span style="font-size: 1.3em;">🤖</span> <strong>Contact</strong>
+                    </a></li>
+                </ul>
+                <style>
+                    nav ul li a.robotic-btn:hover {
+                        transform: scale(1.08);
+                        box-shadow: 0 0 32px #00fff7, 0 4px 16px #fff8;
+                        filter: brightness(1.25) drop-shadow(0 0 8px #00fff7);
+                        border-color: #fff;
+                    }
+                </style>
+        </nav>
+    </div>
+    <div style="display: flex; max-width: 900px; margin: 60px auto;">
+        <div class="portfolio" style="flex: 3;">
+            <h1 id="home">Wendell Jereremias</h1>
+            <div style="margin-top: 16px; color: pink; font-size: 1.08em; background: rgba(0,0,0,0.25); border-radius: 8px; padding: 14px 18px; box-shadow: 0 2px 8px #0002; font-weight: 400; max-width: 520px;">
+                Hello, how are you there? I am Wendell Jeremias, a graduate in Programming. I know how to use HTML, JavaScript, etc. I don't totally know 100 percent about other codes, but I am willing to learn and I will do my best for that. Thank you and keep safe
+            </div>
+            <div style="display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap; justify-content: center;"></div>
+            <h2 id="about">About Me</h2>
+            <hr style="border: none; border-top: 2px solid pink; margin: 10px 0 20px 0;">
+            <p>I am passionate about technology, web development, and learning new things. I enjoy building simple and beautiful web pages.</p>
+            <button style="width: 60%; padding: 10px; margin: 10px 0; border-radius: 5px; border: none; background: #111; color: pink; font-weight: bold; font-size: 1em; cursor: pointer; display: block; margin-left: auto; margin-right: auto;">Junior In Programming</button>
+            <div style="display: flex; flex-direction: column; gap: 16px; align-items: center; margin-top: 18px;">
+                <button class="cool-btn" style="background: linear-gradient(90deg, #ff69b4 0%, #00fff7 100%); color: #fff; font-weight: bold; font-size: 1.08em; border-radius: 12px; box-shadow: 0 0 16px #ff69b4, 0 2px 8px #00fff7a0; padding: 14px 32px; border: none; cursor: pointer; display: flex; align-items: center; gap: 12px; transition: transform 0.2s, box-shadow 0.2s;">
+                    <span style="font-size: 1.3em;">🚀</span> Junior In Programming
+                </button>
+                <button class="cool-btn" style="background: linear-gradient(90deg, #fff700 0%, #00ff6a 100%); color: #232526; font-weight: bold; font-size: 1.08em; border-radius: 12px; box-shadow: 0 0 16px #fff700, 0 2px 8px #00ff6aa0; padding: 14px 32px; border: none; cursor: pointer; display: flex; align-items: center; gap: 12px; transition: transform 0.2s, box-shadow 0.2s;">
+                    <span style="font-size: 1.3em;">🌐</span> Know Html
+                </button>
+                <button class="cool-btn" style="background: linear-gradient(90deg, #00ff6a 0%, #00fff7 100%); color: #232526; font-weight: bold; font-size: 1.08em; border-radius: 12px; box-shadow: 0 0 16px #00ff6a, 0 2px 8px #00fff7a0; padding: 14px 32px; border: none; cursor: pointer; display: flex; align-items: center; gap: 12px; transition: transform 0.2s, box-shadow 0.2s;">
+                    <span style="font-size: 1.3em;">💻</span> Know JavaScript
+                </button>
+                <button class="cool-btn" style="background: linear-gradient(90deg, #ff00cc 0%, #ff69b4 100%); color: #fff; font-weight: bold; font-size: 1.08em; border-radius: 12px; box-shadow: 0 0 16px #ff00cc, 0 2px 8px #ff69b4a0; padding: 14px 32px; border: none; cursor: pointer; display: flex; align-items: center; gap: 12px; transition: transform 0.2s, box-shadow 0.2s;">
+                    <span style="font-size: 1.3em;">🎂</span> 29 Years Old
+                </button>
+            </div>
+            <style>
+                .cool-btn:hover {
+                    transform: scale(1.08);
+                    box-shadow: 0 0 32px #00fff7, 0 4px 16px #ff69b4;
+                    filter: brightness(1.15) drop-shadow(0 0 8px #00fff7);
+                }
+            </style>
+
+            <h2 id="projects" style="color: pink; margin-top: 40px;">Projects</h2>
+            <hr style="border: none; border-top: 2px solid pink; margin: 10px 0 20px 0;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 18px; margin-top: 10px; margin-bottom: 20px;">
+                <div style="width: 320px; padding: 16px; border-radius: 8px; background: linear-gradient(90deg, #232526 0%, #414345 100%); color: pink; font-weight: bold; font-size: 1.08em; box-shadow: 0 2px 8px #00fff7a0; letter-spacing: 1px; text-align: center;">
+                    If I am given a project, I will take care of it and I promise that my team will be satisfied. I want to learn many things. I want to know everything. Thank you.
+                </div>
+            </div>
+            <div style="height: 40px;"></div>
+            <div class="contact" id="contact">
+                <strong>Contact:</strong> <br>
+                <hr style="border: none; border-top: 2px solid #0078d7; margin: 10px 0 10px 0;">
+                <div style="margin-top: 15px;">
+                    <button onclick="window.location.href='mailto:Wendellkulot12@gmail.com'" style="width: 80%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none; background: #111; color: #fff; font-weight: bold; font-size: 1em; cursor: pointer; display: flex; align-items: center; gap: 10px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" style="width: 24px; height: 24px; vertical-align: middle;"> Wendellkulot12@gmail.com
+                    </button>
+                    <button onclick="window.open('https://facebook.com/profile.php?id=100008312345678', '_blank')" style="width: 80%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none; background: #111; color: #fff; font-weight: bold; font-size: 1em; cursor: pointer; display: flex; align-items: center; gap: 10px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 24px; height: 24px; vertical-align: middle;"> Wendell Jeremias
+                    </button>
+                </div>
+                </div>
+                <!-- Chat Box Section -->
+                <div id="chatbox" style="width: 80%; margin: 30px auto 0 auto; background: linear-gradient(135deg, #232526 0%, #414345 100%); border-radius: 16px; padding: 28px 24px; color: #fff; box-shadow: 0 4px 16px #000a; position: relative;">
+                <div id="chatbox" style="width: 80%; margin: 30px auto 0 auto; background: linear-gradient(135deg, #232526 0%, #414345 100%); border-radius: 16px; padding: 28px 24px; color: white; box-shadow: 0 4px 16px #000a; position: relative;">
+                    <div style="display: flex; align-items: center; margin-bottom: 12px; color: white;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" style="margin-right: 10px;"><circle cx="12" cy="12" r="12" fill="#0078d7"/><path d="M7 10h10v2H7v-2zm0 4h7v2H7v-2z" fill="#fff"/></svg>
+                        <strong style="font-size: 1.3em; letter-spacing: 1px; color: white;">Chat Box</strong>
+                    </div>
+                    <div id="chat-messages" style="height: 140px; overflow-y: auto; background: rgba(17,17,17,0.95); border-radius: 8px; margin: 10px 0 18px 0; padding: 12px; font-size: 1em; box-shadow: 0 2px 8px #0003; border: 1px solid #333; color: white;"></div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <input id="chat-input" type="text" placeholder="Type your message..." style="flex: 1; padding: 10px 14px; border-radius: 8px; border: 1px solid #444; background: #222; color: white; font-size: 1em; outline: none; transition: border 0.2s;" onfocus="this.style.borderColor='#0078d7'" onblur="this.style.borderColor='#444'">
+                        <button onclick="sendMessage()" style="padding: 10px 22px; border-radius: 8px; border: none; background: linear-gradient(90deg, #0078d7 0%, #00c6ff 100%); color: white; font-weight: bold; font-size: 1em; box-shadow: 0 2px 8px #0078d7a0; cursor: pointer; transition: background 0.2s;">Send <span style="margin-left:6px;">💬</span></button>
+                    </div>
+                </div>
+                <script>
+                    function sendMessage() {
+                        var input = document.getElementById('chat-input');
+                        var messages = document.getElementById('chat-messages');
+                        if (input.value.trim() !== '') {
+                            var msgDiv = document.createElement('div');
+                            msgDiv.textContent = input.value;
+                            msgDiv.style.marginBottom = '10px';
+                            msgDiv.style.background = 'linear-gradient(90deg, #0078d7 0%, #00c6ff 100%)';
+                            msgDiv.style.color = 'white';
+                            msgDiv.style.padding = '8px 14px';
+                            msgDiv.style.borderRadius = '8px';
+                            msgDiv.style.boxShadow = '0 2px 8px #0078d7a0';
+                            msgDiv.style.fontWeight = '500';
+                            msgDiv.style.maxWidth = '80%';
+                            msgDiv.style.alignSelf = 'flex-end';
+                            messages.appendChild(msgDiv);
+                            messages.scrollTop = messages.scrollHeight;
+                            // Automatic reply
+                            setTimeout(function() {
+                                var replyDiv = document.createElement('div');
+                                replyDiv.textContent = getAutoReply(input.value);
+                                replyDiv.style.marginBottom = '10px';
+                                replyDiv.style.background = 'linear-gradient(90deg, #232526 0%, #414345 100%)';
+                                replyDiv.style.color = '#00fff7';
+                                replyDiv.style.padding = '8px 14px';
+                                replyDiv.style.borderRadius = '8px';
+                                replyDiv.style.boxShadow = '0 2px 8px #232526a0';
+                                replyDiv.style.fontWeight = '500';
+                                replyDiv.style.maxWidth = '80%';
+                                replyDiv.style.alignSelf = 'flex-start';
+                                messages.appendChild(replyDiv);
+                                messages.scrollTop = messages.scrollHeight;
+                            }, 700);
+                            input.value = '';
+                        }
+                    }
+                    function getAutoReply(userMsg) {
+                        userMsg = userMsg.toLowerCase();
+                        if (userMsg.includes('hello') || userMsg.includes('hi')) {
+                            return 'Hi! How can I help you today?';
+                        } else if (userMsg.includes('how are you')) {
+                            return "I'm just a robot, but I'm here to help!";
+                        } else if (userMsg.includes('html')) {
+                            return 'HTML is great for building web pages!';
+                        } else if (userMsg.includes('thank')) {
+                            return 'You’re welcome!';
+                        } else {
+                            return 'Thank you for your message! I will get back to you soon.';
+                        }
+                    }
+                    document.getElementById('chat-input').addEventListener('keydown', function(e) {
+                        if (e.key === 'Enter') sendMessage();
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
